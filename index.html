@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/logo favicom.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <meta name="description" content="Libreria Loremim. Veni y conocenos!!">
+    <meta property="og:type" content="website">
+    <meta property="og:tittle" content="Libreria Loremim">
+    <meta property="og:description"
+        content="Veni y conocenos, encontra los mejores productos y aprovecha los mejores descuentos">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            color: black;
+        }
+
+        /* CSS link color */
+    </style>
+    <title>Libreria Loremim</title>
+
+</head>
+
+<body>
+
+    <!--PORTADA-->
+    <header class="portada">
+        <nav class="navPort">
+            <div class="navBarizq">
+                <img class="logo-inic" src="./Img/logo.png" alt="Logo de la pagina, imagen de una lampara">
+                <h1 class="titulo-Nav f-size-15">Libreria <br> loremim</h1>
+            </div>
+            <div class="navBarder">
+                <a class="titles-nav" href="">INICIO</a>
+                <button onclick="clickModal('quienes' )" class="open" id="open" href="">QUIENES SOMOS
+                </button>
+
+                <button onclick="clickModal('contacto')" class="open">CONTACTO</button>
+            </div>
+
+        </nav>
+
+        <section class="cont-portada">
+            <h2 class="titles-port f-size-50">Veni y Conocenos!!</h2>
+            <h2 class="titles-port f-size-30">Ahora podes consultanos por productos, precios y realizar pedidos</h2>
+            <h2 class="titles-port f-size-30">A traves de nuestros medio de contacto</h2>
+            <!--VENTANA EMERGENTE-->
+            <div class="modal-container" id="modal-container">
+                <div class="modal">
+                    <div class="about-emerg">
+                        <h3 class="titulo-emerg">Quienes Somos</h3>
+                        <p class="parraf-about">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit tristique pellentesque dui dapibus,
+                            sollicitudin sapien sed aptent ullamcorper lacus ac duis nisl imperdiet, accumsan fames
+                            estaenean
+                            justo fringilla mattis tortor libero id. Habitant feugiat ornare suscipit lectus erat justo
+                            non,
+                            porta dapibus fusce nisi pharetra facilisi in mattis, parturient ante curabitur congue
+                            sodales
+                            senectus. Vitae eu aliquam massa rutrum nulla phasellus sapien augue, leo varius accumsan
+                            odio
+                            tortor et gravida dui dis, nibh praesent tincidunt ad sociis nostra cubilia.
+
+                            Scelerisque hac conubia quisque leo velit porttitor blandit habitasse a, convallis magnis
+                            nam
+                            bibendum ultrices nibh mollis fermentum. Volutpat mi mus et felis lacus vel imperdiet,
+                            suspendisse
+                            vivamus duis accumsan ad dis hendrerit sollicitudin, mattis nascetur magna massa facilisi
+                            non.
+                        </p>
+                    </div>
+
+                    <div class="vent-emerg">
+                        <div class="contact-emerg">
+                            <h4>Medios de Contacto</h4>
+                            <h4>Podes Llamarnos a </h4>
+                            <div>
+                                <a href="tel:+5491143230315">
+                                    <img class="img-emerg" src="./Img/Vent-emerg/Telefono.PNG" alt="">
+                            </div>
+
+                            <h4>O podes escribirnos mediante</h4>
+                            <div class="cont-emerg">
+
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone= +5491133503782">
+                                        <img class="img-emerg" src="./Img/Vent-emerg/Whatsapp.PNG" alt="">
+                                    </a>
+
+                                </div>
+                                <div>
+                                    <img class="img-emerg" src="./Img/Vent-emerg/Facebook.PNG" alt="">
+                                </div>
+
+                                <div>
+                                    <a href="mailto:libreria-loremim@gmail.com">
+                                        <img class="img-emerg" src="./Img/Vent-emerg/Gmail.PNG" alt="">
+                                </div>
+                            </div>
+
+
+
+                            <h4>No te olvides de seguirnos</h4>
+                            <a href="https://www.instagram.com/invites/contact/?i=13l2s8044qlf1&utm_content=cpou87z">
+                                <img class="img-emerg" src="./Img/Vent-emerg/Instagram.PNG" alt="">
+                            </a>
+
+                        </div>
+                        <div class="ubicacion-emerg">
+                            <h4>Ubicacion</h4>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.907764445308!2d-58.40637100000001!3d-34.630023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb04ae318545%3A0xb04a96501badfe2d!2sLa%20Rioja%201700%2C%20C1244%20CABA!5e0!3m2!1ses-419!2sar!4v1629203073221!5m2!1ses-419!2sar"
+                                width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <h4>Entre Av. Juan de Garay e Inclan</h4>
+                            <h4>Lineas de colectivo: 101,97,4,143,31,32</h4>
+                            <h4>Estacion cercana Linea H "INCLAN"</h4>
+                        </div>
+                    </div>
+
+                    <button class="button-emerg" id="close">
+                        <img class="close-botton" src="./Img/Vent-emerg/x.jpg"
+                            alt="Imagen de una x para cerrar pestaña">
+                    </button>
+                </div>
+
+
+
+
+            </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <!--  Diseño de la Navbar "categoria productos"-->
+    <h3 class="cont-navs">Categoria de Productos</h3>
+    <!--  Diseño de cards de categorias"-->
+    <div class="categorias jfc-sw">
+        <a href="./categorias/categorias-art.html">
+            <div class="box-categorias box1">
+                <img class="icon-categories zoom" src="./Img/Icons-categories/Arts.jpg" alt="">
+                <h3>LIBRERIA ARTISTICA</h3>
+            </div>
+        </a>
+
+        <div class="box-categorias box2">
+            <img class="icon-categories zoom" src="./Img/Icons-categories/Energy equivalency.jpg" alt="">
+            <h3>LIBRERIA TECNICA</h3>
+        </div>
+
+
+    </div>
+    <div class="categorias jfc-cen">
+        <div class="box-categorias box3 ">
+            <div class="contenido-box">
+                <img class="icon-categories zoom" src="./Img/Icons-categories/Bag.jpg" alt="">
+                <h3>LIBRERIA ESCOLAR</h3>
+            </div>
+        </div>
+    </div>
+    <div class="categorias jfc-sw">
+        <div class="box-categorias box4">
+            <img class="icon-categories zoom" src="./Img/Icons-categories/Tools.jpg" alt="">
+            <h3>LIBRERIA COMERCIAL</h3>
+        </div>
+        <div class="box-categorias box5">
+            <img class="icon-categories zoom" src="./Img/Icons-categories/Notebook.jpg" alt="">
+            <h3>AGENDAS Y LIBRETAS</h3>
+        </div>
+    </div>
+    <!--  Diseño de Nav Dtos."-->
+    <h3 class="cont-navs">Aprovecha las ofertas de la semana</h3>
+    <!--  Cards de Dtos."-->
+    <section class="estruct-card">
+        <div class="Card">
+            <div class="imgCard">
+                <img class="img-cards" src="Img/Productos en Dtos/Lapices de color.png"
+                    alt="Imagen de lapices de colores">
+            </div>
+            <h5 class="cont-card">Set de lapices x12 <br>
+                $300.00</h5>
+        </div>
+        <div class="Card">
+            <div class="imgCard">
+                <img class="img-cards" src="Img/Productos en Dtos/Cuadernos.png" alt="Imagen de varios cuardernos">
+            </div>
+            <h5 class="cont-card">2x1 en Cuadernos <br>
+                $300.00</h5>
+        </div>
+        <div class="Card">
+            <div class="imgCard">
+                <img class="img-cards" src="Img/Productos en Dtos/Microfibras.png" alt="Imagen de microfribras">
+            </div>
+            <h5 class="cont-card">Microfibras <br>
+                $300.00</h5>
+        </div>
+        <div class="Card">
+            <div class="imgCard">
+                <img class="img-cards" src="Img/Productos en Dtos/Agenda.png" alt="Imagen de un anotador o agenda">
+            </div>
+            <h5 class="cont-card">Anotador <br>
+                $300.00</h5>
+        </div>
+    </section>
+    <!--  Nav Productos Destacados"-->
+    <main>
+        <nav class="navs-divisoras">
+            <h3 class="cont-navs">Productos Destacados</h3>
+        </nav>
+        <!--  Cards Productos Destacados"-->
+        <section class="estruct-card">
+            <div class="Card">
+                <div class="imgCard">
+                    <img class="img-cards" src="Img/Productos Destacados/Caballetes de Artistica.png"
+                        alt="imagen de un caballete de pintura">
+                </div>
+                <h5 class="cont-card">Caballete de Artistica <br>
+                    $300.00</h5>
+            </div>
+            <div class="Card">
+                <div class="imgCard">
+                    <img class="img-cards" src="Img/Productos Destacados/Paleta de Acuarelas.png"
+                        alt="Imagen de una paleta de acuarelas">
+                </div>
+                <h5 class="cont-card">Paleta de Acuarelas <br>
+                    $300.00</h5>
+            </div>
+            <div class="Card">
+                <div class="imgCard">
+                    <img class="img-cards" src="Img/Productos Destacados/Pinceles Artistica.png"
+                        alt="Imagen de un set de pinceles">
+                </div>
+                <h5 class="cont-card">Set de Pinceles <br>
+                    $300.00</h5>
+            </div>
+            <div class="Card">
+                <div class="imgCard">
+                    <img class="img-cards" src="Img/Productos Destacados/Tijera.png" alt="Imagen de una tijera">
+                </div>
+                <h5 class="cont-card">Tijera <br>
+                    $300.00</h5>
+            </div>
+    </main>
+    </section>
+    <!--  Nav Metodos de Pago"-->
+    <nav class="metoPagos">
+        <div class="pagos1">
+            <h5>Medio de Pago en Local</h5>
+        </div>
+        <div class="pagos">
+            <h5>Efectivo</h5>
+            <img class="img-pagos" src="Img/Barra de Pagos/efectivo.png" alt="Logo de billetes">
+        </div>
+        <div class="pagos">
+            <h5>Tarj Cred/Debito</h5>
+            <img class="img-pagos" src="Img/Barra de Pagos/tarjeta.png" alt="Logo de un tarjeta de credito">
+        </div>
+        <div class="pagos">
+            <h5>Mercado Pago</h5>
+            <img class="img-pagos1" src="Img/Barra de Pagos/mercadopago.png" alt="Logo de mercadopago">
+        </div>
+        <div class="pagos">
+            <h5>Transf.Bancaria</h5>
+            <img class="img-pagos" src="Img/Barra de Pagos/bancaria.png" alt="Logo de un banco">
+        </div>
+    </nav>
+    <!-- Footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="bloque-footer">
+                <img class="logo-foot" src="./Img/logo.png" alt="Logo de la pagina, imagen de una lampara">
+                <h1 class="titulo-Nav f-size-15">Libreria <br> loremim</h1>
+            </div>
+            <div class="bloque2-footer">
+                <h3 class="f-size-13">Encontranos en <br>La Rioja 1700</h3>
+                <h3 class="f-size-13">Horario de Atención <br>09:00 a 18:00 Hs</h3>
+            </div>
+            <div class="bloque3-footer">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9769220988087!2d-58.408560084918875!3d-34.63002348045267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb04ae318545%3A0xb04a96501badfe2d!2sLa%20Rioja%201700%2C%20C1244%20CABA!5e0!3m2!1ses-419!2sar!4v1623780709775!5m2!1ses-419!2sar"
+                    width="250" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="bloque4-footer f-size-13">
+                <a class="tf-bloque4" href="">INICIO</a>
+                <a class="tf-bloque4" href="">SOBRE NOSOTROS</a>
+                <a class="tf-bloque4" href="">CONTACTO</a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

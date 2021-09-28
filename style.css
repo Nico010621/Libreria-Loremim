@@ -1,0 +1,782 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Mate SC', serif;
+}
+a{
+    text-decoration:none;
+}
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+            /* PORTADA */
+.portada{
+    background-image: url("./Img/NavBar/background.png");
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+}
+.navPort{
+    width: 45%;
+    display: flex;
+    padding: 2%;
+    border: 2px solid white;
+}
+.navBarizq{
+    width: 20%;
+    display: flex;
+    background-image: url("./Img/NavBar/NavBar.png");
+    align-items: center;
+    text-align: center;
+}
+.logo-inic{
+    max-width: 40px;
+    border-radius: 12%;
+}
+.navBarder{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont-portada{
+    width: 45%;
+    text-align: center;
+    padding: 7%;
+}
+
+.contact-port{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-port{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 150px;
+}
+.titles-nav{
+    width: 20%;
+    text-align: center;
+}
+                                            /* VENTANA EMERGENTE */
+.modal-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+.open{
+    font-size: 16px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background-color: transparent;
+}
+.modal{
+   background-color: white;
+   text-align: center;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.about-emerg{
+    width: 95%;
+    margin: auto;
+}
+
+.titulo-emerg{
+    font-size: 20px;
+}
+.parraf-about{
+    font-size: 18px
+}
+.vent-emerg{
+    display: flex;
+}
+.contact-emerg{
+    width: 50%;
+}
+.cont-emerg{
+    display: flex;
+    justify-content:center;
+}
+.img-emerg{
+    width: 130px;
+}
+.ubicacion-emerg{
+    width: 50%;
+}
+.button-emerg{
+    margin: auto;
+    border-radius: 4px;
+    margin-bottom: 20px
+}
+.close-botton{
+    width: 18px;
+}    
+/* VENTANA EMERGENTE*/
+    
+   
+
+    
+    
+    
+    
+                                        /* Diseño de las Navbar */
+.cont-navs{
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 3px solid black;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 8px;
+    margin-bottom: 10px;
+ } 
+                            
+                                  /* Diseño de cards de categorias" */
+ .categorias{
+     width: 50%;
+     margin: auto;
+     display: flex;
+     text-align: center;
+    }
+    .box-categorias{
+        width: 200px;
+        height: 200px;
+        background-color: #C4C4C4;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+     }
+     .jfc-sw{
+        justify-content: space-between;
+     }
+     .jfc-cen{
+        justify-content: center;
+     }    
+     .icon-categories{
+        width: 140px;
+        padding-top: 5px;
+     }
+   .zoom{
+       transition: 1s ease-out;
+   }
+   
+   .zoom:hover{
+       transform: scale(1.1);
+   }
+                        /*  Cards de Dtos. y Produc Destacados */
+.estruct-card{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+ }
+ .Card{
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 10px;
+    margin: 7px;
+ }
+ .imgCard{
+    margin: auto;
+    height: 200px;
+    width: 240px;
+ }
+    
+ .cont-card{
+    font-size: 20px;
+ }
+                                        /*  Metodos de Pagos */
+ .metoPagos{
+    max-width: 910px; 
+    margin: auto;
+    
+    display: flex;
+    border-radius: 10px;
+ }
+ .pagos{
+    width: 190px;
+    text-align: center;
+ }
+ .pagos1{
+    display: flex;
+    align-items: center;
+ }
+  
+                                        /*  Footer */
+ footer{
+    background-color: #F5F5F5;
+    margin: 8px;
+}   
+.container-footer{
+    max-width: 55%;
+    margin: 0 auto;
+    display: flex;
+}
+.bloque-footer{
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 15px;
+    display: flex;
+    text-align: center;
+}
+.logo-foot{
+    width: 40px;
+    height: 40px;
+}
+.bloque2-footer{
+    text-align: center;    
+    margin-top: 20px;
+}
+    
+.bloque3-footer{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bloque4-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 25px;
+}
+.tf-bloque4{
+    margin-bottom: 5px;
+}
+    
+                                        /*  Footer */
+ .logos{
+    width: 45px;
+ }
+ .f-size-20{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+ }
+ .f-size-30{
+    font-size: 30px;
+ }
+ .f-size-50{
+    font-size: 50px;
+ }
+ .f-size-13{
+    font-size: 13px;
+ }
+ .f-size-15{
+    font-size: 15px;
+ }
+   
+    
+   
+    
+    
+
+ 
+
+   
+  
+   
+   
+  
+   
+   
+
+
+
+
+ 
+
+   
+    
+
+
+
+   
+      
+   
+       
+       
+
+
+/*  Sitio Resposive */
+
+@media (max-width: 967px) {
+   *{
+       box-sizing: border-box;
+   }
+   body{
+       margin: 0 auto;
+       align-items: center;
+   }
+/* PORTADA */
+.portada{
+    background-image: url("./Img/port-responsive.png");
+    background-size: cover; 
+    width: 100%;
+}
+.navPort{
+       width: 67%; 
+       display: flex;
+       flex-direction: column;
+       border: 0px;
+   }
+   .titulo-Nav{
+    font-size: 12px
+}
+.navBarizq{
+    width: 35%;
+    margin: auto;
+}
+.quienes-somos{
+    font-size: 12px;
+}
+.logo-inic{
+   width: 20px;
+}
+.navBarder{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+.titles-nav{
+    font-size: 14px;
+    margin-right: 2px;
+}
+.cont-portada{
+    width: 85%;
+    margin-left: 2px;
+    padding-left: 1px;
+}
+.medios-cont{
+    max-width: 100%;
+}
+.img-port{
+    max-width: 80%;
+}
+
+.titles-port{
+    font-size: 25px;
+}
+                                                /* PORTADA */
+                                                 /* VENTANA EMERGENTE */
+.modal-container{
+    display: flex;
+    height: 500px;
+    overflow: auto;
+}
+.open{
+    font-size: 13px;
+    width: 100%;
+}
+    
+   
+.modal{
+    display: flex;
+    flex-direction: column;
+ }
+ .about-emerg{
+     width: 100%;
+ }
+
+ .titulo-emerg{
+     font-size: 15px;
+ }
+ .parraf-about{
+     width: 95%;
+     font-size: 12px;
+     margin: auto;
+ }
+   
+ .vent-emerg{
+     display: flex;
+     flex-direction: column;
+ }
+ .contact-emerg{
+     width: 100%;
+ }
+ .cont-emerg{
+     display: flex;
+     justify-content:center;
+ }
+ .img-emerg{
+     width: 90px;
+ }
+ .ubicacion-emerg{
+     width: 100%;
+ }
+ .button-emerg{
+     margin: auto;
+     border-radius: 4px;
+     margin-bottom: 20px
+ }
+ .close-botton{
+     width: 12px;
+ }    
+
+/* VENTANA EMERGENTE*/
+                                            /* Diseño de las Navbar  */
+.cont-navs{
+    font-size: 20px;
+    padding-top: 6px;
+    max-width: 100%;
+} 
+                                            /* Diseño de las Navbar*/
+   
+/* Diseño de cards de categorias" */
+.categorias{
+    width: 100%;
+    margin: 1px;
+    padding: 5px;
+    font-size: 12px;
+}
+.box-categorias{
+    height: 60%;
+    width: 45%;
+    margin: auto;
+   }
+   .jfc-sw{
+      justify-content: space-between;
+   }
+   .jfc-cen{
+      justify-content: center;
+   }    
+   .icon-categories{
+      width: 80px;
+      padding-top: 5px;
+   }
+                                    /* Diseño de cards de categorias" */ 
+                                    /*  Cards de Dtos. y Produc Destacados */ 
+    
+ 
+
+                                
+    
+    
+.estruct-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+ }
+ .imgCard{
+    margin: auto;
+    height: 200px;
+    width: 240px;
+ }
+ .cont-card{
+    font-size: 20px;
+ }
+ /*  Cards de Dtos. y Produc Destacados */  
+ /*  Metodos de Pagos */
+.metoPagos{
+    max-width: 100%;
+}
+.pagos{
+   max-width: 45%;
+   text-align: center;
+   margin: auto;
+}
+/*  Metodos de Pagos */
+.metoPagos{
+ display: flex;
+ flex-wrap: wrap;
+ margin: auto;
+}    
+.pagos1{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+   justify-content: center;
+   border-bottom: 2px solid black;
+   }
+.img-pagos{
+    width: 35px;
+}
+.img-pagos1{
+    width: 55px;
+}     
+                        /*  Metodos de Pagos */
+                        /*  Footer */
+.container-footer{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+}
+.logo-foot{
+    width: 20px;
+    height: 20px;
+}
+.titulo-Nav{
+    font-size: 15px;
+}
+.bloque-footer{
+    display: flex;
+    align-items:center;
+    font-size: 16px;
+}
+.bloque2-footer{
+    
+    text-align: center;    
+    margin-top: 5px;
+}
+.mapa{
+    max-width: 99%;
+}
+.bloque4-footer{
+    display: flex;
+}
+.tf-bloque4{
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+/*  Footer */     
+        
+
+
+
+   
+
+
+ 
+
+    
+
+
+
+
+
+
+ 
+   
+
+    
+
+
+
+}
+
+    
+    
+
+    
+ 
+
+
+    
+   
+
+                             
+     
+
+ 
+      
+  
+     
+     
+
+ 
+ 
+
+    
+
+    
+    
+
+
+    
+    
+    
+   
+
+    
+    
+
+    
+
+
+
+    
+
+    
+
+    
+    
+
+    
+    
+
+
+    
+    
+
+    
+   
+    
+   
+
+    
+    
+
+    
+
+        
+         
+     
+       
+
+        
+
+        
+        
+
+        
+        
+       
+    
+        
+
+       
+            
+   
+   
+   
+        
+       
+      
+      
+      
+        
+        
+          
+          
+           
+           
+    
+    
+
+    
+
+    
+      
+   
+
+    
+
+
+
+
+
+
+
+         
+       
+      
+       
+
+         
+        
+      
+       
+
+      
+ 
+       
+
+
+       
+      
+    
+    
+
+    
+
+    
+   
+    
+
+
+        
+   
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+   
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+
+    
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+
+    

@@ -1,0 +1,198 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Mate SC', serif;
+}
+a{
+    text-decoration:none;
+}
+
+                        /* PORTADA */
+ .portada{
+     width: 80%;
+     margin: auto;
+     margin-bottom: 15px;
+     text-align: center;
+     
+ }
+ .navPort{
+     display: flex;
+     margin: auto;
+     justify-content: center;
+ }
+ .navBarizq{
+    width: 12%;
+    display: flex;
+    background-image: url("./img-categorias/NavBar/NavBar.png");
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+}
+ 
+.logo-inic{
+    width: 40px;
+    border-radius: 12PX;
+}
+.navBarder{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+ }
+ .tittle-nav{
+     margin: 5px;
+ }
+ .logueo{
+    display: flex;
+    align-items: center;  
+    width: 30%; 
+    
+ }
+                             /* TITULO PORTADA */
+ .tittle-port{
+     width: 30%;
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin: auto;
+ }
+  
+  
+                /*  Carrousel */
+.carrousel{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.cont-carrousel{
+    background-image: url("./img-categorias/background-colors/4706201.jpg");
+    background-size: cover;
+    display: flex;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.carr-izq{
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;    
+}
+.tittle-carr{
+    margin: auto;
+}
+
+.carr-der{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+    
+  
+
+
+
+    
+
+                     /*  Cards de Dtos. y Produc Destacados */
+ .estruct-card{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    margin: 15px;
+ }
+ .Card{
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 10px;
+    margin: 7px;
+ }
+ .imgCard{
+    margin: auto;
+    height: 200px;
+    width: 240px;
+ }
+ .img-cards{
+    height: 200px;
+    width: 236px;
+    margin: auto;
+ }   
+ .cont-card{
+    font-size: 20px;
+ }
+  /*  Footer */
+  footer{
+    background-color: #F5F5F5;
+    margin: 8px;
+}   
+.container-footer{
+    max-width: 55%;
+    margin: 0 auto;
+    display: flex;
+}
+.bloque-footer{
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 15px;
+    display: flex;
+    text-align: center;
+}
+.logo-foot{
+    width: 40px;
+    height: 40px;
+}
+.bloque2-footer{
+    text-align: center;    
+    margin-top: 20px;
+}
+    
+.bloque3-footer{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bloque4-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 25px;
+}
+.tf-bloque4{
+    margin-bottom: 5px;
+}
+    
+                                        /*  Footer */
+ .logos{
+    width: 45px;
+ }
+ .f-size-20{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+ }
+ .f-size-30{
+    font-size: 30px;
+ }
+ .f-size-50{
+    font-size: 50px;
+ }
+ .f-size-13{
+    font-size: 13px;
+ }
+ .f-size-15{
+    font-size: 15px;
+ }
+
