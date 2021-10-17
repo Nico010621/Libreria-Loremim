@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img-categorias/logos/logo favicom.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <meta name="description" content="Libreria Loremim. Veni y conocenos!!">
+    <meta property="og:type" content="website">
+    <meta property="og:tittle" content="Libreria Loremim">
+    <meta property="og:description"
+        content="Veni y conocenos, encontra los mejores productos y aprovecha los mejores descuentos">
+    <meta property="og:image" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-categorias.css">
+    <script src="https://kit.fontawesome.com/b8dc60971e.js" crossorigin="anonymous"></script>
+    <title>Lib||Escolar</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html" class="nav-logo">
+                <img class="logo-header" src="../Img/logo.png" alt="Logo de una lampara">
+                Libreria Loremim
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <button onclick="clickModal('quienes')" class="open-quienes-somos">QUIENES SOMOS
+                    </button>
+                </li>
+
+                <li class="nav-menu-item">
+                    <button onclick="clickModalContacto('contacto-modal')" class="open-contacto">CONTACTO
+                    </button>
+                </li>
+                <li class="nav-menu-item">
+                    <button onclick="clickModalCategoria('categorias-modal')" class="open-categorias">CATEGORIAS
+                    </button>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active">INICIAR SESION/REGISTRARSE</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MODAL//QUIENES SOMOS    -->
+    <div class="modal-container-quienesSomos" id="modal-container-quienesSomos">
+        <div class="modal-quienesSomos">
+            <div class="quienesSomos-modal">
+                <div class="header-modal">
+                    <h3 class="titulo-modal">Quienes Somos</h3>
+                    <button class="button-emerg" id="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <p class="parraf-about">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit tristique pellentesque dui dapibus,
+                    sollicitudin sapien sed aptent ullamcorper lacus ac duis nisl imperdiet, accumsan fames
+                    estaenean
+                    justo fringilla mattis tortor libero id. Habitant feugiat ornare suscipit lectus erat justo
+                    non,
+                    porta dapibus fusce nisi pharetra facilisi in mattis, parturient ante curabitur congue
+                    sodales
+                    senectus. Vitae eu aliquam massa rutrum nulla phasellus sapien augue, leo varius accumsan
+                    odio
+                    tortor et gravida dui dis, nibh praesent tincidunt ad sociis nostra cubilia.
+
+                    Scelerisque hac conubia quisque leo velit porttitor blandit habitasse a, convallis magnis
+                    nam
+                    bibendum ultrices nibh mollis fermentum. Volutpat mi mus et felis lacus vel imperdiet,
+                    suspendisse
+                    vivamus duis accumsan ad dis hendrerit sollicitudin, mattis nascetur magna massa facilisi
+                    non.
+                </p>
+
+                <div class="ubicacion-emerg">
+                    <h3 class="subtitulos-modal">nos encontramos en</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.907764445308!2d-58.40637100000001!3d-34.630023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb04ae318545%3A0xb04a96501badfe2d!2sLa%20Rioja%201700%2C%20C1244%20CABA!5e0!3m2!1ses-419!2sar!4v1629203073221!5m2!1ses-419!2sar"
+                        width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h4 class="subtitulos-modal">entre Av. Juan de Garay e Inclan</h4>
+                    <h4 class="subtitulos-modal">lineas de colectivo: 101,97,4,143,31,32</h4>
+                    <h4 class="subtitulos-modal">estacion cercana linea h est. Inclan"</h4>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MODAL/CONTACTO  -->
+    <div class="modal-container-contacto" id="modalContainer-Contacto">
+        <div class="modal-contacto">
+            <div class="contactos-modal">
+                <div class="header-modal">
+                    <h3 class="titulo-modal">contactanos</h3>
+                    <button class="button-emerg" id="close-contacto">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <h4 class="subtitulos-modal">podes llamarnos al </h4>
+                <a class="links-contactos" href="tel:+5491143230315">
+                    <i class="fas fa-phone"></i>
+                    4323-0315</a>
+                <h4 class="subtitulos-modal">o podes escribirnos mediante</h4>
+                <a class="links-contactos separacion" href="https://api.whatsapp.com/send?phone= +5491133503782">
+                    <i class="fas fa-mobile"></i>
+                    11-3350-3782 </a>
+                <a class="links-contactos" href="mailto:libreria-loremim@gmail.com">
+                    <i class="far fa-envelope-open"></i>
+                    libreria-loremim@gmail.com</a>
+                <h4 class="subtitulos-modal">seguinos en nuestras redes</h4>
+                <a class="links-contactos" href="">
+                    <i class="fab fa-instagram"></i>
+                    Libreria-Lorem
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- MODAL/CATEGORIAS  -->
+    <div class="modal-container-categorias" id="modalContainer-Categorias">
+        <div class="modal-categorias">
+            <div class="header-modal">
+                <h3 class="titulo-modal">categorias de productos</h3>
+                <button class="button-emerg" id="close-categorias">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="categorias jfc-sw">
+                <div class="box-categorias box1 zoom">
+                    <a href="../categorias/categorias-art.html">
+                        <img class="icon-categories zoom" src="../Img/Icons-categories/Arts.jpg" alt="Paleta Artistica">
+                        <h3 class="subtitulos-modal-cat">ARTISTICOS</h3>
+                    </a>
+                </div>
+                <div class="box-categorias box2 zoom">
+                    <a href="../categorias/categorias-tec.html">
+                        <img class="icon-categories zoom" src="../Img/Icons-categories/Energy equivalency.jpg" alt="Tablero Tecnico">
+                        <h3 class="subtitulos-modal-cat">TECNICOS</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="categorias jfc-cen">
+                <div class="box-categorias box3 zoom ">
+                    <a href="../categorias/categorias-esc.html">
+                        <div class="contenido-box">
+                            <img class="icon-categories zoom" src="../Img/Icons-categories/Bag.jpg" alt="Mochila Escolar">
+                            <h3 class="subtitulos-modal-cat">ESCOLARES</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="categorias jfc-sw">
+                <div class="box-categorias box4 zoom">
+                    <a href="../categorias/categorias-com.html">
+                        <img class="icon-categories zoom" src="../Img/Icons-categories/Tools.jpg" alt="Goma, Lapiz y Regla">
+                        <h3 class="subtitulos-modal-cat">COMERCIALES</h3>
+                    </a>
+                </div>
+
+
+                <div class="box-categorias box5 zoom">
+                    <a href="../categorias/agend-libr.html">
+                        <img class="icon-categories zoom" src="../Img/Icons-categories/Notebook.jpg" alt="Agenda Junto a un Lapiz">
+                        <h3 class="subtitulos-modal-cat">AGENDAS</h3>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="tittle-port">
+            <h1>ESCOLAR</h1>
+
+        </div>
+        <section class="carrousel">
+            <div class="cont-carrousel">
+                <div class="carr-izq">
+                    <h2 class="tittle-carr">EN PROMOCION</h2>
+    
+                </div>
+                <div class="carr-der">
+    
+                    <div class="contenido-derecha">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img-categorias/cards/Oferta1-Carrousel.PNG" class="d-block w-100" alt="Caja con Acuarelas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img-categorias/cards/Oferta2-Carrousel.PNG" class="d-block w-100" alt="Caja con Lapices">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img-categorias/cards/Oferta3-Carrousel.PNG" class="d-block w-100" alt="Acrilicos para Pintura">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <section class="estruct-card">
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+    
+        </section>
+        <section class="estruct-card">
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+    
+        </section>
+        <section class="carrousel">
+            <div class="cont-carrousel">
+                <div class="carr-izq">
+                    <h2 class="tittle-carr">DESTACADOS</h2>
+    
+                </div>
+                <div class="carr-der">
+    
+                    <div class="contenido-derecha">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img-categorias/cards/Destacado1-Carrousel.PNG" class="d-block w-100"
+                                        alt="Atril para Dibujar">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img-categorias/cards/Destacado2-Carrousel.PNG" class="d-block w-100"
+                                        alt="Mezclador de Colores">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img-categorias/cards/Destacado3-Carrousel.PNG" class="d-block w-100"
+                                        alt="Block de Hojas de Dibujos">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="estruct-card">
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+    
+        </section>
+        <section class="estruct-card">
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+            <div class="Card">
+                <div class="imgCard ">
+                    <img class="img-cards" src="./img-categorias/cards/Producto no Dispo.PNG"
+                        alt="Imagen de lapices de colores">
+                </div>
+                <h5 class="cont-card">PROXIMAMENTE.</h5>
+                <button type="button" class="btn btn-primary">$ 0, 00</button>
+            </div>
+    
+        </section>
+ <!--  Nav Metodos de Pago"-->
+ <nav class="estructura-pagos">
+    <div class="metoPagos">
+        <div class="pagos1">
+            <h5>Medio de Pago en Local</h5>
+        </div>
+        <div class="pagos">
+            <h5>Efectivo</h5>
+            <img class="img-pagos" src="../Img/Barra de Pagos/efectivo.png" alt="Logo de billetes">
+        </div>
+        <div class="pagos">
+            <h5>Tarj Cred/Debito</h5>
+            <img class="img-pagos" src="../Img/Barra de Pagos/tarjeta.png" alt="Logo de un tarjeta de credito">
+        </div>
+        <div class="pagos">
+            <h5>Mercado Pago</h5>
+            <img class="img-pagos1" src="../Img/Barra de Pagos/mercadopago.png" alt="Logo de mercadopago">
+        </div>
+        <div class="pagos">
+            <h5>Transf.Bancaria</h5>
+            <img class="img-pagos" src="../Img/Barra de Pagos/bancaria.png" alt="Logo de un banco">
+        </div>
+    </div>
+</nav>
+
+        <footer>
+            <div class="container-footer">
+                <div class="bloque-footer">
+                    <img class="logo-foot" src="./img-categorias/logos/logo.png"
+                        alt="Logo de la pagina, imagen de una lampara">
+                    <h1 class="titulo-Nav f-size-15">Libreria <br> loremim</h1>
+                </div>
+                <div class="bloque2-footer">
+                    <h3 class="f-size-13">Encontranos en <br>La Rioja 1700</h3>
+                    <h3 class="f-size-13">Horario de Atención <br>09:00 a 18:00 Hs</h3>
+                </div>
+                <div class="bloque3-footer">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9769220988087!2d-58.408560084918875!3d-34.63002348045267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb04ae318545%3A0xb04a96501badfe2d!2sLa%20Rioja%201700%2C%20C1244%20CABA!5e0!3m2!1ses-419!2sar!4v1623780709775!5m2!1ses-419!2sar"
+                        width="250" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="bloque4-footer f-size-13">
+                    <li class="tf-bloque4">
+                        <a href="/index.html">
+                            <button class="open">INICIO</button>
+                        </a>
+                        
+                    </li>
+                    <li class="tf-bloque4">
+                        <button onclick="clickModal('somos')" class="open" href="">QUIENES SOMOS
+                        </button>
+                    </li>
+                    <li class="tf-bloque4">
+                        <button onclick="clickModalContacto('contacto')" class="open-contacto" href="">CONTACTO
+                        </button>
+                    </li>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"></script>
+        <script src="categorias.js"></script>
+
+        <script src="categorias.js"></script>
+</body>
+
+</html>

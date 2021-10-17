@@ -12,26 +12,26 @@ navToggle.addEventListener("click", () => {
 });
 
 //MODAL
-let open = document.getElementsByClassName("open");
-let modal_container = document.getElementById("modal-container");
+let open = document.getElementsByClassName("open-quienes-somos");
+let modal_container_quienesSomos = document.getElementById("modal-container-quienesSomos");
 
-function clickModal(parametro) {
+function clickModalSomos(parametro) {
   if (parametro == "somos") {
-    let modal_container = document.getElementById("modal-container");
-    modal_container.classList.add("show");
+    let modal_container_quienesSomos = document.getElementById("modal-container-quienesSomos");
+    modal_container_quienesSomos.classList.add("show-quienesSomos");
   }
   if (parametro == "quienes") {
-    let modal_container = document.getElementById("modal-container");
-    modal_container.classList.add("show");
+    let modal_container_quienesSomos = document.getElementById("modal-container-quienesSomos");
+    modal_container_quienesSomos.classList.add("show-quienesSomos");
   }
 }
 
 let close = document.getElementById("close");
 close.addEventListener("click", () => {
  
-  let modal_container = document.getElementById("modal-container");
+  let modal_container_quienesSomos = document.getElementById("modal-container-quienesSomos");
 
-  modal_container.classList.remove("show");
+  modal_container_quienesSomos.classList.remove("show-quienesSomos");
 }
 )
 //MODAL CONTACTO    
@@ -58,5 +58,23 @@ close_contacto.addEventListener("click", () => {
 }
 )
 
+//MODAL CATEGORIAS  
+let open_categorias = document.getElementsByClassName("open-categorias");
+let modal_container_categorias = document.getElementById("modalContainer-Categorias");
+
+function clickModalCategoria(parametro) {
+  if (parametro == "categorias-modal") {
+    let modal_container_categoria = document.getElementById("modalContainer-Categorias");
+    modal_container_categoria.classList.add("show-categorias");
+  }
+}
 
 
+let close_categoria = document.getElementById("close-categorias");
+close_categoria.addEventListener("click", () => {
+ 
+  let modal_container_categoria = document.getElementById("modalContainer-Categorias");
+
+  modal_container_categoria.classList.remove("show-categorias");
+}
+)
