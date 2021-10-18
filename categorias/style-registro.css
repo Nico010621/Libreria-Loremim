@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Mate SC', serif;
+    background-color: #eee;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+
+/* PORTADA */
+.header {
+    background-color: #DEC0F1 ;   /*  #DEC0F1  #6B4E71  #361D2E #957FEF  */
+    margin-bottom: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 80px;
+}
+.nav-logo {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    line-height: 40px;
+}
+.logo-header{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 6px;
+}  
+/* Formulario*/
+.registro{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px ;
+    
+}
+.subtitulos{
+    margin-bottom: 10px;
+    font-size: 18px;
+} 
+.iniciar-Sesion{
+    width: 50%;
+}
+.form-group-iniciar{
+    width: 60%;
+    margin: auto;
+}
+.form-check{
+    width: 60%;
+    margin: auto;  
+}
+.button-inciar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.registrarse{
+    width: 50%;
+}
+.form-group-registrase{
+    width: 50%;
+}
+.registrarse-nombre-contraseña{
+    display: flex;
+}
+.separacion{
+    margin-right: 10px;
+}
+.correo-celular{
+    width: 90%;
+}
+  
+.fecha-nacimiento{
+    display: flex;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.form-control-añoNacimiento{
+    width: 30%;
+} 
+
+
+
+
+/***********************************************Sitio Resposive************************************************************  */
+/* ************************************************************************************************************************  */
+    @media (max-width: 967px) {
+*{
+        box-sizing: border-box;
+}
+body{
+    margin: 0 auto;  
+}
+/* Formulario*/
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 99%;
+    border-radius: 10px;
+    margin: auto;
+}
+.titulo{
+    font-size: 20px;
+    margin-top: 10px ;
+    border-bottom: 1px solid black;
+}
+.subtitulos{
+    margin-bottom: 6px;
+    font-size: 12px;
+} 
+.iniciar-Sesion{
+    width: 100%;
+}
+.form-group-iniciar{
+    width: 90%;
+}
+.form-check{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button-inciar{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.registrarse{
+    width: 100%;
+}
+.registrarse-nombre-contraseña{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.form-group-registrase{
+    width: 90%;
+    margin: auto;
+}
+    
+.correo-celular{
+    width: 90%;
+    margin: auto;
+}
+.nacimiento{
+    width: 90%;
+    margin: auto;
+}
+    }
+    
+    
+    
+
+  
+
+
+    
+
+    
+
