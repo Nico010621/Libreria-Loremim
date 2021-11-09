@@ -321,15 +321,20 @@ a{
    margin: auto;
    height: 200px;
    width: 240px;
+   display: flex;
+   align-items: center;
 }
 .img-cards{
-   height: 199px;
-   width: 238px;
+   max-height: 199px;
+   max-width: 238px;
    margin: auto;
-   display: none;
+   display: flex;
+   align-items: center;
+   
 }   
 .cont-card{
    font-size: 20px;
+   width: 99%;
 }
 .btn {
     margin-bottom: 15px;

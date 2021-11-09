@@ -345,6 +345,47 @@ a{
  .f-size-15{
     font-size: 15px;
  }
+
+ /*MODAL CONTACTO */ 
+.modal-container-productos{
+  
+  /* width: 300px;     Responsive*/
+  width: 50%;
+   
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   
+}
+.img-modal-productos{
+    margin: 0 20px;
+}
+
+.modal-productos{
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+  
+.parrafo-modal-producto{
+    width: 95%;
+    font-size: 20px;
+}
+.cont-modal-productos{
+   display: flex;
+}
+.imagen-modal{
+    display: flex;
+}
+.contenido-texto-modal{
+    display: flex;
+    flex-direction: column;
+}
+    
+
+
  
  
  /****************************************************  Sitio Resposive **********************************************************/
